@@ -1,0 +1,36 @@
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>API URL Redirector – Options</title>
+    <style>
+        body { font-family: system-ui, Arial, sans-serif; margin: 16px; }
+        label { display:block; margin-top: 8px; }
+        input { width: 100%; padding: 6px; }
+        button { margin-top: 10px; }
+        .rule { border: 1px solid #ddd; padding: 8px; margin: 8px 0; border-radius: 6px; }
+        .row { display:flex; gap:8px; align-items:center; }
+        .grow { flex: 1; }
+    </style>
+</head>
+<body>
+<h1>API URL Redirector</h1>
+
+<section>
+    <h2>Add Rule</h2>
+    <label>Match prefix (From)</label>
+    <input id="matchPrefix" placeholder="https://devint.eu.peoplefirst-dev.com/api/v1/customcards/">
+    <label>Replace prefix (To)</label>
+    <input id="replacePrefix" placeholder="https://localhost:8301/api/customcards/">
+    <button id="addBtn">Add</button>
+</section>
+
+<section>
+    <h2>Current Rules</h2>
+    <div id="rules"></div>
+</section>
+
+<script src="options.js"></script>
+</body>
+</html>
